@@ -13,7 +13,7 @@ public class CoinDefinition {
 
 
     public static final String coinName = "Concierge";
-    public static final String coinTicker = "PIVX";
+    public static final String coinTicker = "CCC";
     public static final String coinURIScheme = "concierge";
     public static final String cryptsyMarketId = "155";
     public static final String cryptsyMarketCurrency = "PIV";
@@ -77,7 +77,7 @@ public class CoinDefinition {
     public static final boolean feeCanBeRaised = false;
 
     //
-    // PIVX 0.12
+    // CCC 0.12
     //
     public static final int PROTOCOL_VERSION = 70912;          //version.h PROTOCOL_VERSION
     public static final int MIN_PROTOCOL_VERSION = 70912;        //version.h MIN_PROTO_VERSION
