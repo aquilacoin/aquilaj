@@ -1,9 +1,9 @@
 package org.darkcoinj;
 
-import org.pivxj.core.*;
-import org.pivxj.script.Script;
-import org.pivxj.utils.ContextPropagatingThreadFactory;
-import org.pivxj.utils.Threading;
+import org.conciergej.core.*;
+import org.conciergej.script.Script;
+import org.conciergej.utils.ContextPropagatingThreadFactory;
+import org.conciergej.utils.Threading;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

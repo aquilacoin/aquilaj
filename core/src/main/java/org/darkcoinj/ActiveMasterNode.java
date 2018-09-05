@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.pivxj.core.*;
+import org.conciergej.core.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

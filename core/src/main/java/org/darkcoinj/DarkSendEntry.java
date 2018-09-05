@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.pivxj.core.*;
+import org.conciergej.core.*;
 
 import java.util.ArrayList;
 
