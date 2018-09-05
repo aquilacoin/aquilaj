@@ -88,7 +88,7 @@ public class CoinDefinition {
 
     public static final boolean supportsBloomFiltering = true; //Requires PROTOCOL_VERSION 70000 in the client
 
-    public static final int Port    = 51472;       //protocol.h GetDefaultPort(testnet=false)
+    public static final int Port    = 51470;       //protocol.h GetDefaultPort(testnet=false)
     public static final int TestPort = 51474;     //protocol.h GetDefaultPort(testnet=true)
 
     /** Zerocoin starting block height */
@@ -96,34 +96,29 @@ public class CoinDefinition {
     public static final long MAINNET_ZEROCOIN_STARTING_BLOCK_HEIGHT = Integer.MAX_VALUE;
 
     //
-    //  Production
-    //
-    public static final int AddressHeader = 30;             //base58.h CBitcoinAddress::PUBKEY_ADDRESS
-    public static final int p2shHeader = 13;             //base58.h CBitcoinAddress::SCRIPT_ADDRESS
+    public static final int AddressHeader = 28;             //base58.h CBitcoinAddress::PUBKEY_ADDRESS
+    public static final int p2shHeader = 8;             //base58.h CBitcoinAddress::SCRIPT_ADDRESS
     public static final int dumpedPrivateKeyHeader = 128;   //common to all coins
-    public static final long oldPacketMagic = 0xfbc0b6db;      //0xfb, 0xc0, 0xb6, 0xdb
-    public static final long PacketMagic = 0x90c4fde9;
+    public static final long oldPacketMagic = 0x81c4ede9;      //0xfb, 0xc0, 0xb6, 0xdb
+    public static final long PacketMagic = 0x6b714a5b;
 
     //Genesis Block Information from main.cpp: LoadBlockIndex
-    static public long genesisBlockDifficultyTarget = 0x1e0ffff0;         //main.cpp: LoadBlockIndex
-    static public long genesisBlockTime = 1454124731L;                       //main.cpp: LoadBlockIndex
-    static public long genesisBlockNonce = 2402015;                         //main.cpp: LoadBlockIndex
-    static public String genesisHash = "0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818";  //main.cpp: hashGenesisBlock
-    static public String genesisMerkleRoot = "1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b";
-    static public int genesisBlockValue = 250;                                                              //main.cpp: LoadBlockIndex
+    static public long genesisBlockDifficultyTarget = 504365040;         //main.cpp: LoadBlockIndex
+    static public long genesisBlockTime = 1535463355L;                       //main.cpp: LoadBlockIndex
+    static public long genesisBlockNonce = 399062;                         //main.cpp: LoadBlockIndex
+    static public String genesisHash = "5897bcdc2575a8b4a684d81a0d805f2e89749c91e1c5d9f65732eb81905bc830";  //main.cpp: hashGenesisBlock
+    static public String genesisMerkleRoot = "437a826ae72cee4af5d4616a36d83ce543176d4eb889752a3eb1783de4219fe5";
+    static public int genesisBlockValue = 50;                                                              //main.cpp: LoadBlockIndex
     //taken from the raw data of the block explorer
-    static public String genesisTxInBytes = "04ffff001d01044c55552e532e204e657773202620576f726c64205265706f7274204a616e203238203230313620576974682048697320416273656e63652c205472756d7020446f6d696e6174657320416e6f7468657220446562617465";//"04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73";   //"limecoin se convertira en una de las monedas mas segura del mercado, checa nuestros avances"
-    static public String genesisTxOutBytes = "abaab9327e5b33f265c3aaeb3537b8a989cc09c1692ef106bbfa38f285e15c34";//"040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9";
+    static public String genesisTxInBytes = "04ffff001d0104324e6174696f6e616c20537569636964652050726576656e74696f6e20486f746c696e6520312d3830302d3237332d38323535";//"04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73";   //"limecoin se convertira en una de las monedas mas segura del mercado, checa nuestros avances"
+    static public String genesisTxOutBytes = "abaab9327e5b33f265c3aaeb3537b8a989cc09c1692ef106bbfa38f285e15c34";/*"040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9";*/
+    public static final String genesisTxPubKey = "04a21d2738e2ec20ede37104e3215ceccb8726094f8ec7477ce3ef67e87e3c26520211bf4467e8bd128888b8cde6d611c5c0564d08f92c602892ef0403c4aa7a3a";
 
     //net.cpp strDNSSeed
     static public String[] dnsSeeds = new String[] {
-            "concierge.seed.fuzzbawls.pw",
-            "concierge.seed2.fuzzbawls.pw",
-            "coin-server.com",
-            "s3v3nh4cks.ddns.net"
+            "45.32.207.214","178.62.94.162","54.39.96.184","104.238.186.149","45.63.100.153"
     };
-
-    public static int minBroadcastConnections = 3;   //0 for default; we need more peers.
+    public static int minBroadcastConnections = 1;   //0 for default; we need more peers.
 
     //
     // TestNet - DASH
