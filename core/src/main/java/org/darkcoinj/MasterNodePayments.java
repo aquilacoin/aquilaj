@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.conciergej.core.MasterNodePaymentWinner;
+import org.aquilaj.core.MasterNodePaymentWinner;
 
 import java.util.ArrayList;
 

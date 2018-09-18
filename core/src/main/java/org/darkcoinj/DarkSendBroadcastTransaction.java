@@ -1,7 +1,7 @@
 package org.darkcoinj;
 
-import org.conciergej.core.Transaction;
-import org.conciergej.core.TransactionInput;
+import org.aquilaj.core.Transaction;
+import org.aquilaj.core.TransactionInput;
 
 /**
  * Created by Eric on 2/8/2015.

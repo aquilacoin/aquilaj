@@ -14,9 +14,9 @@
 
 package wallettemplate;
 
-import org.conciergej.core.listeners.DownloadProgressTracker;
-import org.conciergej.core.Coin;
-import org.conciergej.utils.MonetaryFormat;
+import org.aquilaj.core.listeners.DownloadProgressTracker;
+import org.aquilaj.core.Coin;
+import org.aquilaj.utils.MonetaryFormat;
 import com.subgraph.orchid.TorClient;
 import com.subgraph.orchid.TorInitializationListener;
 import javafx.animation.FadeTransition;

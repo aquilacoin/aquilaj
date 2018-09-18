@@ -1,7 +1,7 @@
 package org.darkcoinj;
 
-import org.conciergej.core.DarkSendQueue;
-import org.conciergej.core.Sha256Hash;
+import org.aquilaj.core.DarkSendQueue;
+import org.aquilaj.core.Sha256Hash;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

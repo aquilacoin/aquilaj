@@ -15,9 +15,9 @@
 package wallettemplate;
 
 import javafx.scene.layout.HBox;
-import org.conciergej.core.*;
-import org.conciergej.wallet.SendRequest;
-import org.conciergej.wallet.Wallet;
+import org.aquilaj.core.*;
+import org.aquilaj.wallet.SendRequest;
+import org.aquilaj.wallet.Wallet;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

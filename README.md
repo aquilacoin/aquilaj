@@ -1,6 +1,6 @@
-### Welcome to conciergej
+### Welcome to aquilaj
 
-The conciergej library is a Java implementation of the CCC protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of CCC Core. It comes with full documentation and some example apps showing how to use it.
+The aquilaj library is a Java implementation of the CCC protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of CCC Core. It comes with full documentation and some example apps showing how to use it.
 
 ### Technologies
 
@@ -43,7 +43,7 @@ If you send coins to that address, it will forward them on to the address you sp
 
 ```
   cd examples
-  mvn exec:java -Dexec.mainClass=org.conciergej.examples.ForwardingService -Dexec.args="<insert a concierge address here>"
+  mvn exec:java -Dexec.mainClass=org.aquilaj.examples.ForwardingService -Dexec.args="<insert a aquila address here>"
 
 ```
 
