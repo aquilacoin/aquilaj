@@ -68,7 +68,7 @@ public class CoinDefinition {
     }
 
     public static int spendableCoinbaseDepth = 100; //main.h: static const int COINBASE_MATURITY
-    public static final long MAX_COINS = 22000000;                 //main.h:  MAX_MONEY
+    public static final long MAX_COINS = 30000000 ;                 //main.h:  MAX_MONEY
 
 
     public static final long DEFAULT_MIN_TX_FEE = 10000;   // MIN_TX_FEE
@@ -79,8 +79,8 @@ public class CoinDefinition {
     //
     // AQX 0.12
     //
-    public static final int PROTOCOL_VERSION = 70810;          //version.h PROTOCOL_VERSION
-    public static final int MIN_PROTOCOL_VERSION = 70810;        //version.h MIN_PROTO_VERSION
+    public static final int PROTOCOL_VERSION = 70914;          //version.h PROTOCOL_VERSION
+    public static final int MIN_PROTOCOL_VERSION = 70912;        //version.h MIN_PROTO_VERSION
 
     public static final int BLOCK_CURRENTVERSION = 2;   //CBlock::CURRENT_VERSION
     public static final int MAX_BLOCK_SIZE = 1 * 1000 * 1000;
@@ -88,7 +88,7 @@ public class CoinDefinition {
 
     public static final boolean supportsBloomFiltering = true; //Requires PROTOCOL_VERSION 70000 in the client
 
-    public static final int Port    = 51470;       //protocol.h GetDefaultPort(testnet=false)
+    public static final int Port    = 45454;       //protocol.h GetDefaultPort(testnet=false)
     public static final int TestPort = 51474;     //protocol.h GetDefaultPort(testnet=true)
 
     /** Zerocoin starting block height */
@@ -96,27 +96,27 @@ public class CoinDefinition {
     public static final long MAINNET_ZEROCOIN_STARTING_BLOCK_HEIGHT = Integer.MAX_VALUE;
 
     //
-    public static final int AddressHeader = 28;             //base58.h CBitcoinAddress::PUBKEY_ADDRESS
-    public static final int p2shHeader = 8;             //base58.h CBitcoinAddress::SCRIPT_ADDRESS
+    public static final int AddressHeader = 75;             //base58.h CBitcoinAddress::PUBKEY_ADDRESS
+    public static final int p2shHeader = 18;             //base58.h CBitcoinAddress::SCRIPT_ADDRESS
     public static final int dumpedPrivateKeyHeader = 128;   //common to all coins
     public static final long oldPacketMagic = 0x81c4ede9;      //0xfb, 0xc0, 0xb6, 0xdb
-    public static final long PacketMagic = 0x6b714a5b;
+    public static final long PacketMagic = 0x0711050b;           //0x07, 0x11, 0x05, 0x0b
 
     //Genesis Block Information from main.cpp: LoadBlockIndex
-    static public long genesisBlockDifficultyTarget = 504365040;         //main.cpp: LoadBlockIndex
-    static public long genesisBlockTime = 1535463355;                       //main.cpp: LoadBlockIndex
-    static public long genesisBlockNonce = 399062;                         //main.cpp: LoadBlockIndex
-    static public String genesisHash = "5897bcdc2575a8b4a684d81a0d805f2e89749c91e1c5d9f65732eb81905bc830";  //main.cpp: hashGenesisBlock
-    static public String genesisMerkleRoot = "437a826ae72cee4af5d4616a36d83ce543176d4eb889752a3eb1783de4219fe5";
-    static public int genesisBlockValue = 50;                                                              //main.cpp: LoadBlockIndex
+    static public long genesisBlockDifficultyTarget = 0x1e0ffff0;         //main.cpp: LoadBlockIndex
+    static public long genesisBlockTime = 1531237199;                       //main.cpp: LoadBlockIndex
+    static public long genesisBlockNonce = 1432588;                         //main.cpp: LoadBlockIndex
+    static public String genesisHash = "0x00000175eaf60f51531b04df3f5926282ba0fc46e9327b0105f44c12ef46ed0a";  //main.cpp: hashGenesisBlock
+    static public String genesisMerkleRoot = "0x37de3c3f9c16a2406150704193382cf381344fb90b1e470f98fbf903d73dbb6a";
+    static public int genesisBlockValue = 0;                                                              //main.cpp: LoadBlockIndex
     //taken from the raw data of the block explorer
-    static public String genesisTxInBytes = "04ffff001d0104324e6174696f6e616c20537569636964652050726576656e74696f6e20486f746c696e6520312d3830302d3237332d38323535";//"04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73";   //"limecoin se convertira en una de las monedas mas segura del mercado, checa nuestros avances"
+    static public String genesisTxInBytes = "0100000000000000000000000000000000000000000000000000000000000000000000006abb3dd703f9fb980f471e0bb94f3481f32c38934170506140a2169c3f3cde374fd3445bf0ff0f1e0cdc15000101000000010000000000000000000000000000000000000000000000000000000000000000ffffffff5904ffff001d01044c502432322042696c6c696f6e205769706564204f7574206f662043727970746f204d61726b657420696e20323420486f75727320617320426974636f696e2044726f707320556e6465722024362c343030ffffffff0100000000000000004341041d33468b8753a0df3b8ddbd0b64edf0e7e2bbc4996ff7d7ceb32283496d72b40421eff54bf4a223f0af838253114ed27f1661a35086870e7693b52ff040ac641ac00000000";//"04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73";   //"limecoin se convertira en una de las monedas mas segura del mercado, checa nuestros avances"
     //static public String genesisTxOutBytes = "abaab9327e5b33f265c3aaeb3537b8a989cc09c1692ef106bbfa38f285e15c34";/*"040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9";*/
-    public static final String genesisTxPubKey = "04a21d2738e2ec20ede37104e3215ceccb8726094f8ec7477ce3ef67e87e3c26520211bf4467e8bd128888b8cde6d611c5c0564d08f92c602892ef0403c4aa7a3a";
+    public static final String genesisTxPubKey = "41041d33468b8753a0df3b8ddbd0b64edf0e7e2bbc4996ff7d7ceb32283496d72b40421eff54bf4a223f0af838253114ed27f1661a35086870e7693b52ff040ac641ac";
 
     //net.cpp strDNSSeed
     static public String[] dnsSeeds = new String[] {
-            "45.32.207.214","178.62.94.162","54.39.96.184","104.238.186.149","45.63.100.153"
+            "23.95.213.138","172.245.156.155"
     };
     public static int minBroadcastConnections = 1;   //0 for default; we need more peers.
 
@@ -156,7 +156,7 @@ public class CoinDefinition {
             "s3v3nh4cks.ddns.net"
     };
     //from main.h: CAlert::CheckSignature
-    public static final String SATOSHI_KEY = "04b48efb7d7217b1abc88e84574c7137e6dff7a8cb9bee070922daca0a9624a684cdc4f1c91383417ffa2c22c0b21313d15dfa2ec718609a64276aef3c0afdebb6";
+    public static final String SATOSHI_KEY = "04bcef7296a547c2c84c3e7b564ae6b3c1e4455982a2ca736d4570fd37443840873578e4ec7485027256956d4804bc5db25ed80d5546b30264b423b69fa009843d";
     public static final String TESTNET_SATOSHI_KEY = "000010e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9";
 
     /** The string returned by getId() for the main, production network where people trade things. */
