@@ -106,13 +106,13 @@ public class CoinDefinition {
     static public long genesisBlockDifficultyTarget = 0x1e0ffff0;         //main.cpp: LoadBlockIndex
     static public long genesisBlockTime = 1531237199;                       //main.cpp: LoadBlockIndex
     static public long genesisBlockNonce = 1432588;                         //main.cpp: LoadBlockIndex
-    static public String genesisHash = "0x00000175eaf60f51531b04df3f5926282ba0fc46e9327b0105f44c12ef46ed0a";  //main.cpp: hashGenesisBlock
+    static public String genesisHash = "0x37de3c3f9c16a2406150704193382cf381344fb90b1e470f98fbf903d73dbb6a";  //main.cpp: hashGenesisBlock
     static public String genesisMerkleRoot = "0x37de3c3f9c16a2406150704193382cf381344fb90b1e470f98fbf903d73dbb6a";
     static public int genesisBlockValue = 0;                                                              //main.cpp: LoadBlockIndex
     //taken from the raw data of the block explorer
     static public String genesisTxInBytes = "04ffff001d01044c502432322042696c6c696f6e205769706564204f7574206f662043727970746f204d61726b657420696e20323420486f75727320617320426974636f696e2044726f707320556e6465722024362c343030";//"04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73";   //"limecoin se convertira en una de las monedas mas segura del mercado, checa nuestros avances"
     //static public String genesisTxOutBytes = "abaab9327e5b33f265c3aaeb3537b8a989cc09c1692ef106bbfa38f285e15c34";/*"040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9";*/
-    public static final String genesisTxPubKey = "041d33468b8753a0df3b8ddbd0b64edf0e7e2bbc4996ff7d7ceb32283496d72b40421eff54bf4a223f0af838253114ed27f1661a35086870e7693b52ff040ac641";
+    public static final String genesisTxPubKey = "41041d33468b8753a0df3b8ddbd0b64edf0e7e2bbc4996ff7d7ceb32283496d72b40421eff54bf4a223f0af838253114ed27f1661a35086870e7693b52ff040ac641ac";
 
     //net.cpp strDNSSeed
     static public String[] dnsSeeds = new String[] {
